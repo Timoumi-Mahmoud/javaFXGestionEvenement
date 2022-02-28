@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InsertGuiController">
+   <children>
+      <Button fx:id="btnSubmit" layoutX="648.0" layoutY="82.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="92.0" prefWidth="94.0" text="ADD_Event" />
+      <VBox layoutX="27.0" layoutY="48.0" prefHeight="356.0" prefWidth="169.0" spacing="10.0">
+         <children>
+            <Label text="Nom">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label text="Type">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label text="Date_debut">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label text="Date_fin">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label text="Prix">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label text="Nombre_Participants">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label text="Hotel">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="291.0" layoutY="48.0" prefHeight="223.0" prefWidth="300.0" spacing="10.0">
+         <children>
+            <TextField fx:id="TextFieldNom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldType">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="DatePickerDate_debut" prefHeight="31.0" prefWidth="305.0" />
+            <DatePicker fx:id="DatePickerDate_fin" prefHeight="31.0" prefWidth="300.0" />
+            <TextField fx:id="TextFieldPrix">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldNombre_Participants">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldHotel" prefHeight="80.0" prefWidth="147.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="-2.0" layoutY="404.0" prefHeight="200.0" prefWidth="553.0">
+         <children>
+            <Button layoutX="-10.0" layoutY="31.0" mnemonicParsing="false" onAction="#GoHome" prefHeight="108.0" prefWidth="180.0" text="Back Home" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

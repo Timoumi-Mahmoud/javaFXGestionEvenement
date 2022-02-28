@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UpdateGuiController">
+   <children>
+      <HBox layoutX="12.0" layoutY="14.0" prefHeight="64.0" prefWidth="900.0">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+            <ButtonBar layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" />
+            <ButtonBar layoutX="210.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" />
+            <ButtonBar layoutX="210.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" />
+            <ButtonBar layoutX="610.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="171.0" prefHeight="324.0" prefWidth="199.0" spacing="4.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="227.0" text="Nom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="227.0" text="Type">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="227.0" text="Date Debut">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="227.0" text="Date Fin">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="227.0" text="Prix">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="227.0" text="Nombre de Participants">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="195.0" prefHeight="37.0" prefWidth="227.0" text="ID Hotel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="249.0" layoutY="156.0" prefHeight="308.0" prefWidth="180.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tfNomU" prefHeight="40.0" prefWidth="178.0" />
+            <TextField fx:id="tfTypeU" prefHeight="38.0" prefWidth="178.0" />
+            <DatePicker fx:id="tfDDU" />
+            <DatePicker fx:id="tfDFU" />
+            <TextField fx:id="tfPrixU" prefHeight="42.0" prefWidth="182.0" />
+            <TextField fx:id="tfNPU" prefHeight="42.0" prefWidth="178.0" />
+            <TextField fx:id="tfIDHotelU" prefHeight="37.0" prefWidth="176.0" />
+         </children>
+      </VBox>
+      <TextField fx:id="tfIDEventU" layoutX="643.0" layoutY="157.0" prefHeight="51.0" prefWidth="226.0" />
+      <Label layoutX="42.0" layoutY="100.0" text="Please enter the new values of the event that you want to chane and the it&quot;s ID" />
+      <Label layoutX="508.0" layoutY="172.0" text="ID Event">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="255.0" prefHeight="51.0" prefWidth="134.0" text="Are you sure" />
+      <CheckBox layoutX="694.0" layoutY="270.0" mnemonicParsing="false" text="100% sure" />
+      <CheckBox layoutX="694.0" layoutY="300.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="111.0" text="No " />
+      <Button layoutX="642.0" layoutY="495.0" mnemonicParsing="false" onAction="#MakeUpdate" prefHeight="95.0" prefWidth="258.0" text="MAKE CHANGES" textFill="#d01111">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="42.0" layoutY="534.0" mnemonicParsing="false" onAction="#GoHome" prefHeight="51.0" prefWidth="215.0" text="Back Home" />
+   </children>
+</AnchorPane>
